@@ -2,7 +2,11 @@ import { test, expect } from "@playwright/test";
 import HomePage from "../page-objects/HomePage";
 import CartPage from "../page-objects/CartPage"
 
+
+test.use({ storageState: ".auth/standard-user-auth.json" });
+
 // It wasn't specified that it has to be done through the products page, therefor did this through base page
+test.describe("Adding to cart tests", async () => {
 test("Add item to cart and assert that the correct item with the correct price is shown in the cart", async ({ page }) => {
     const homePage = new HomePage(page);
     const cartPage = new CartPage(page);
@@ -21,3 +25,4 @@ test.skip('Add item to cart and assert that the correct item with the correct pr
     await expect(page.locator('#product-1')).toContainText('Women > Tops');
     await expect(page.locator('#product-1')).toContainText('Rs. 500');
   });
+});

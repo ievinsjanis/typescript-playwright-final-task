@@ -2,31 +2,31 @@
   "cookies": [
     {
       "name": "csrftoken",
-      "value": "BgpPzJsKvTrMW3k3ZF9rkJKU7jp1QOBmQq6yhQY2iUVpUmXxq8y9IB4aQOKoBKuJ",
+      "value": "EYFjIzDXzBTvLqnaBzDsAO7BUviydQYOIUP30Z3sIrUORwvt4loqCmqidDz819KL",
       "domain": "automationexercise.com",
       "path": "/",
-      "expires": 1745514605.968299,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__eoi",
-      "value": "ID=728b9d0e775f83a5:T=1714065005:RT=1714065005:S=AA-AfjYJeOQT_Xj3eloR6lEs3zHR",
-      "domain": ".automationexercise.com",
-      "path": "/",
-      "expires": 1729617005,
+      "expires": 1745516552.639679,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "sessionid",
-      "value": "xph5nseetsc4k3xpwzurhixq68ls8exz",
+      "value": "jjp2yq7r39msdqwhf99mtldgl8zn1hn3",
       "domain": "automationexercise.com",
       "path": "/",
-      "expires": 1715274605.617104,
+      "expires": 1715276552.249795,
       "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__eoi",
+      "value": "ID=f62cedb30b1a8176:T=1714066951:RT=1714066951:S=AA-Afjavu-Jrjp6v8GHbac6yLusF",
+      "domain": ".automationexercise.com",
+      "path": "/",
+      "expires": 1729618951,
+      "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     }
