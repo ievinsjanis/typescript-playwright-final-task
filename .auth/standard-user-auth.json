@@ -2,30 +2,30 @@
   "cookies": [
     {
       "name": "csrftoken",
-      "value": "SsbwKYFmATpa8VxSa8FIS8bWocMmgjInUbu9onFaCn7Js8qDbSMn4h0nJwYvVXwW",
+      "value": "7rYl9b2BFH8eRa3RDhFO1EAcQLMoD3uBXjeza6pqwy1RAlkgQrwDapsRxCqBfDJC",
       "domain": "automationexercise.com",
       "path": "/",
-      "expires": 1745566187.247629,
+      "expires": 1745570698.343468,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__eoi",
-      "value": "ID=a566f1583cfea581:T=1714116585:RT=1714116585:S=AA-AfjZHpCeBGvRsGxGqu5Zaw5L2",
+      "value": "ID=f9c51e4ab14aacab:T=1714121096:RT=1714121096:S=AA-AfjbENrDdlwl7uLkb6ckIDRQK",
       "domain": ".automationexercise.com",
       "path": "/",
-      "expires": 1729668585,
+      "expires": 1729673096,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "sessionid",
-      "value": "pr8uf8somhkvhfdey59axf0up8ycpmpd",
+      "value": "jijv5w4wlji1f7w85uuuiihr9xx2djwb",
       "domain": "automationexercise.com",
       "path": "/",
-      "expires": 1715326186.989651,
+      "expires": 1715330698.037969,
       "httpOnly": true,
       "secure": false,
       "sameSite": "Lax"
