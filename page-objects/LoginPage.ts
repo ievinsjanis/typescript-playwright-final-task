@@ -7,6 +7,7 @@ export default class LoginPage extends BasePage {
   readonly passwordInput: Locator;
   readonly loginButton: Locator;
 
+
   constructor(page: Page) {
     super(page);
     this.page = page;

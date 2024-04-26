@@ -11,7 +11,7 @@ setup("Sign in as standard user", async ({ page }) => {
   await loginPage.inputLoginData("janisievins99@gmail.com", "parol3123");
   await loginPage.clickLoginButton();
   await homePage.assertPageUrl("/");
-  await homePage.assertText(homePage.carouselSlider, 'All QA engineers can use this website for automation practice and API testing either they are at beginner or advance level. This is for everybody to help them brush up their automation skills.');
+  await homePage.assertCarouselSliderText("All QA engineers can use this website for automation practice and API testing either they are at beginner or advance level. This is for everybody to help them brush up their automation skills.");
 
   await page.context().storageState({ path: authFile });
 });

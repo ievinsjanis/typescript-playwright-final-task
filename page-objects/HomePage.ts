@@ -7,7 +7,7 @@ export default class HomePage extends BasePage {
   readonly blueTopModal: Locator;
   readonly addToCartBlueTopButton: Locator;
   readonly viewCartHyperlink: Locator;
-
+  readonly consentCookiesButton: Locator;
 
   constructor(page: Page) {
     super(page);
@@ -16,6 +16,7 @@ export default class HomePage extends BasePage {
     this.carouselSlider = this.page.locator('[id="slider"]');
     this.addToCartBlueTopButton = this.page.locator('.overlay-content .btn.btn-default.add-to-cart[data-product-id="1"]');
     this.viewCartHyperlink = this.page.locator("//div[@class='modal-content']//a[starts-with(@href, '/view_cart')]");
+    this.consentCookiesButton = this.page.locator("//p[@class='fc-button-label' and text()='Consent']");
   }
 
   async addBlueTopToCart() {
@@ -24,6 +25,13 @@ export default class HomePage extends BasePage {
   }
 
   async clickViewCartHyperlink() {
-    await this.clickButton(this.viewCartHyperlink)
+    await this.clickButton(this.viewCartHyperlink);
+  }
+
+  async assertCarouselSliderText(text: string) {
+  await this.assertText(this.carouselSlider, text);
+  }
+  async clickConsentCookiesButton() {
+    await this.clickButton(this.consentCookiesButton);
   }
 }
