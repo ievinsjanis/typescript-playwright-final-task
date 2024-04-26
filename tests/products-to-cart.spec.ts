@@ -31,6 +31,17 @@ test('Add item to cart and assert that the correct item with the correct price i
     const cartPage = new CartPage(page);
     
     await homePage.navigateToPage("/view_cart");
-    
+    await cartPage.clickCheckOutButton();
+    await cartPage.assertPageUrl("/checkout");
+    await cartPage.assertItemIsVisibleInCart("Blue Top","Women > Tops", "Rs. 500");
+    await cartPage.clickPlaceOrderButton();
+    await cartPage.fillValidCreditCardInfo();
+    await cartPage.clickPayAndConfirmButton();
+    await cartPage.assertOrderComplete();
+    await cartPage.assertCartEmpty();
+    await
   });  
 });
+
+  
+  
